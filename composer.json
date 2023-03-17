@@ -1,0 +1,16 @@
+{
+	"name":"luidsonl/simple-php-mvc-framework",
+
+	"authors":[
+		{
+			"name": "Luidson Lima",
+			"email":"luidsonlsti@gmail.com"
+		}
+	],
+	"autoload":{
+		"psr-4":{
+			"app\\": "./"
+		}
+	},
+	"require":{}
+}
