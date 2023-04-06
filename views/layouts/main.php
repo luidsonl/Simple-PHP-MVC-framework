@@ -7,18 +7,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="py-2 bg-light border-bottom">
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto">
-        <li class="nav-item"><a href="/" class="nav-link link-dark px-2 ">Home</a></li>
-        <li class="nav-item"><a href="/contact" class="nav-link link-dark px-2">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+      <div class="navbar-brand"></div>
+      <ul class="navbar-nav me-auto" id="navDropdown">
+        <li class="nav-item"><a href="/" class="nav-link px-3">Home</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link px-3">Contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-3">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-3">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-3">About</a></li>
       </ul>
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+      <ul class="navbar-nav" id="navDropdown">
+        <li class="nav-item"><a href="#" class="nav-link px-3">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-3">Sign up</a></li>
       </ul>
     </div>
   </nav>
