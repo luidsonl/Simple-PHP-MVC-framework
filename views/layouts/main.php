@@ -18,12 +18,12 @@
         <li class="nav-item"><a href="#" class="nav-link px-3">About</a></li>
       </ul>
       <ul class="navbar-nav" id="navDropdown">
-        <li class="nav-item"><a href="#" class="nav-link px-3">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-3">Sign up</a></li>
+        <li class="nav-item"><a href="/login" class="nav-link px-3">Login</a></li>
+        <li class="nav-item"><a href="/register" class="nav-link px-3">Sign up</a></li>
       </ul>
     </div>
   </nav>
-  <div class="container">
+  <div class="container mt-4">
     {{content}}
   </div>
   

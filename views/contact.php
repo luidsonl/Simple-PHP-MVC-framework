@@ -6,12 +6,8 @@
 <form action="" method="post">
   <div class="mb-3">
     <label for="" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="" name="email">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-   	<label for="password" class="form-label">Password</label>
-   	<input type="password" class="form-control" id="password">
   </div>
   <div class="mb-3">
    	<label for="subject" class="form-label">Subject</label>
