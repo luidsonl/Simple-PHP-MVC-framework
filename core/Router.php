@@ -33,7 +33,8 @@ class Router{
 			return $this->renderView($callback);
 		}
 		if (is_array($callback)){
-			$callback[0] = new $callback[0]();
+			Application::$app->controller = new $callback[0]();
+			$callback[0] = Application::$app->controller;
 		}
 
 
@@ -50,8 +51,9 @@ class Router{
 		return str_replace('{{content}}', $viewContent, $layoutContent);
 	}
 	protected function layoutContent(){
+		$layout = Application::$app->controller->layout;
 		ob_start();
-		include_once Application::$ROOT_DIR."/views/layouts/main.php";
+		include_once Application::$ROOT_DIR."/views/layouts/$layout.php";
 		return ob_get_clean();
 	}
 	protected function renderOnlyView($view, $params){
