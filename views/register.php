@@ -1,4 +1,5 @@
 <?php
+
 ?>
 
 <h1>Create acount</h1>
@@ -11,7 +12,7 @@
     </div>
     <div class="col">
       <label for="" class="form-label">Lastname</label>
-      <input type="text" class="form-control" id="" name="lastnam">
+      <input type="text" class="form-control" id="" name="lastname">
     </div>
   </div>
   
@@ -25,8 +26,8 @@
    	<input type="password" class="form-control" id="password" name="password">
   </div>
   <div class="mb-3">
-    <label for="password" class="form-label">Confirm password</label>
-    <input type="password" class="form-control" id="password" name="confirmPassword">
+    <label for="confirmPassword" class="form-label">Confirm password</label>
+    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
   </div>
   <div class="mb-3">
 
