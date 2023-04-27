@@ -1,3 +1,5 @@
+<?php  use \app\core\Application; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +26,13 @@
     </div>
   </nav>
   <div class="container mt-4">
+
+    <?php if(Application::$app->session->getFlash('success')){ ?>
+    <div class="alert alert-success">
+      <?php echo Application::$app->session->getFlash('success'); ?>
+    </div>
+    <?php } ?>
+    
     {{content}}
   </div>
   
