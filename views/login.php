@@ -1,17 +1,13 @@
-<?php
-?>
+<?php use \app\core\form\Form;?>
+<?php use \app\models\User;?>
+<?php /**@var $model User */?>
+
 
 <h1>Login</h1>
 
-<form action="" method="post">
-  <div class="mb-3">
-    <label for="" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-   	<label for="password" class="form-label">Password</label>
-   	<input type="password" class="form-control" id="password">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Login</button>
-</form>
+<?php $form = Form::begin('', "post"); ?>
+  <?php echo $form->field($model, 'email'); ?>
+  <?php echo $form->field($model, 'password')->passwordField(); ?>
+  
+  <button type="submit" class="btn btn-primary">Register</button>
+<?php  Form::end(); ?>
