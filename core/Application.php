@@ -66,6 +66,10 @@ class Application{
 		$this->session->remove('user');
 	}
 
+	public static function isGuest(){
+		return !self::$app->user;
+	}
+
 }
 
 
