@@ -57,6 +57,9 @@ echo '</pre>';
 
         <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link" href="/profile"> Profile</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/logout"><?php echo Application::$app->user->getDisplayName(); ?> (Logout)</a>
           </li>
         </ul>
